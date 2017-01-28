@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+0001_initial.py	apps/util/migrations/0001_initial.py	1;"	kind:file	line:1
+0002_cidade.py	apps/util/migrations/0002_cidade.py	1;"	kind:file	line:1
+ALLOWED_HOSTS	erp/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:30
+APP_DIR	erp/settings.py	/^APP_DIR  = os.path.join(BASE_DIR, "apps")$/;"	kind:variable	line:17
+AUTH_PASSWORD_VALIDATORS	erp/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:95
+AppConfig	apps/util/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+BASE_DIR	erp/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+Cidade	apps/util/admin.py	/^from . models import Estado, Regiao, Cidade$/;"	kind:namespace	line:2
+Cidade	apps/util/models.py	/^class Cidade(models.Model):$/;"	kind:class	line:21
+Cidade	apps/util/views.py	/^from . models import Cidade$/;"	kind:namespace	line:3
+DATABASES	erp/settings.py	/^DATABASES = {$/;"	kind:variable	line:84
+DEBUG	erp/settings.py	/^DEBUG = True$/;"	kind:variable	line:28
+DJANGO_APPS	erp/settings.py	/^DJANGO_APPS = [$/;"	kind:variable	line:35
+ERP_APPS	erp/settings.py	/^ERP_APPS =[$/;"	kind:variable	line:44
+Estado	apps/util/admin.py	/^from . models import Estado, Regiao, Cidade$/;"	kind:namespace	line:2
+Estado	apps/util/models.py	/^class Estado(models.Model):$/;"	kind:class	line:12
+INSTALLED_APPS	erp/settings.py	/^INSTALLED_APPS = ERP_APPS + DJANGO_APPS$/;"	kind:variable	line:48
+LANGUAGE_CODE	erp/settings.py	/^LANGUAGE_CODE = 'pt-br'$/;"	kind:variable	line:114
+MIDDLEWARE	erp/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:50
+Migration	apps/util/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	apps/util/migrations/0002_cidade.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+ROOT_URLCONF	erp/settings.py	/^ROOT_URLCONF = 'erp.urls'$/;"	kind:variable	line:60
+Regiao	apps/util/admin.py	/^from . models import Estado, Regiao, Cidade$/;"	kind:namespace	line:2
+Regiao	apps/util/models.py	/^class Regiao(models.Model):$/;"	kind:class	line:4
+STATIC_URL	erp/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:128
+TEMPLATES	erp/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:62
+TIME_ZONE	erp/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:116
+TestCase	apps/util/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+USE_I18N	erp/settings.py	/^USE_I18N = True$/;"	kind:variable	line:118
+USE_L10N	erp/settings.py	/^USE_L10N = True$/;"	kind:variable	line:120
+USE_TZ	erp/settings.py	/^USE_TZ = True$/;"	kind:variable	line:122
+UtilConfig	apps/util/apps.py	/^class UtilConfig(AppConfig):$/;"	kind:class	line:4
+WSGI_APPLICATION	erp/settings.py	/^WSGI_APPLICATION = 'erp.wsgi.application'$/;"	kind:variable	line:78
+__init__.py	apps/util/__init__.py	1;"	kind:file	line:1
+__init__.py	apps/util/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	erp/__init__.py	1;"	kind:file	line:1
+__str__	apps/util/models.py	/^    def __str__(self):$/;"	kind:member	line:17
+__str__	apps/util/models.py	/^    def __str__(self):$/;"	kind:member	line:8
+admin	apps/util/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	erp/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+admin.py	apps/util/admin.py	1;"	kind:file	line:1
+application	erp/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	apps/util/apps.py	1;"	kind:file	line:1
+db	apps/util/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+db	apps/util/migrations/0002_cidade.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+ddd	apps/util/models.py	/^    ddd = models.CharField(max_length=3)$/;"	kind:variable	line:24
+deletion	apps/util/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+deletion	apps/util/migrations/0002_cidade.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+dependencies	apps/util/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:13
+dependencies	apps/util/migrations/0002_cidade.py	/^    dependencies = [$/;"	kind:variable	line:11
+django	apps/util/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+django	apps/util/migrations/0002_cidade.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+django	manage.py	/^            import django$/;"	kind:namespace	line:14
+estado	apps/util/models.py	/^    estado = models.ForeignKey(Estado, on_delete=models.CASCADE)$/;"	kind:variable	line:23
+execute_from_command_line	manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+field	apps/util/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='util.Regiao'),$/;"	kind:variable	line:36
+fields	apps/util/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
+fields	apps/util/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:27
+fields	apps/util/migrations/0002_cidade.py	/^            fields=[$/;"	kind:variable	line:18
+findAllCidades	apps/util/views.py	/^def findAllCidades():$/;"	kind:function	line:6
+get_wsgi_application	erp/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+initial	apps/util/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
+manage.py	manage.py	1;"	kind:file	line:1
+migrations	apps/util/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	apps/util/migrations/0002_cidade.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+model_name	apps/util/migrations/0001_initial.py	/^            model_name='estado',$/;"	kind:variable	line:34
+models	apps/util/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	apps/util/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+models	apps/util/migrations/0002_cidade.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	apps/util/migrations/0002_cidade.py	/^import django.db.models.deletion$/;"	kind:namespace	line:6
+models	apps/util/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models.py	apps/util/models.py	1;"	kind:file	line:1
+name	apps/util/apps.py	/^    name = 'util'$/;"	kind:variable	line:5
+name	apps/util/migrations/0001_initial.py	/^            name='Estado',$/;"	kind:variable	line:18
+name	apps/util/migrations/0001_initial.py	/^            name='Regiao',$/;"	kind:variable	line:26
+name	apps/util/migrations/0001_initial.py	/^            name='regiao',$/;"	kind:variable	line:35
+name	apps/util/migrations/0002_cidade.py	/^            name='Cidade',$/;"	kind:variable	line:17
+nome	apps/util/models.py	/^    nome = models.CharField(max_length=20)$/;"	kind:variable	line:13
+nome	apps/util/models.py	/^    nome = models.CharField(max_length=20)$/;"	kind:variable	line:5
+nome	apps/util/models.py	/^    nome = models.CharField(max_length=32)$/;"	kind:variable	line:22
+operations	apps/util/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:16
+operations	apps/util/migrations/0002_cidade.py	/^    operations = [$/;"	kind:variable	line:15
+os	erp/settings.py	/^import os, sys$/;"	kind:namespace	line:13
+os	erp/wsgi.py	/^import os$/;"	kind:namespace	line:10
+os	manage.py	/^import os$/;"	kind:namespace	line:2
+regiao	apps/util/models.py	/^    regiao = models.ForeignKey(Regiao, on_delete=models.CASCADE)$/;"	kind:variable	line:15
+render	apps/util/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+settings.py	erp/settings.py	1;"	kind:file	line:1
+sigla	apps/util/models.py	/^    sigla = models.CharField(max_length=2, unique=True)$/;"	kind:variable	line:14
+sigla	apps/util/models.py	/^    sigla = models.CharField(max_length=2, unique=True)$/;"	kind:variable	line:6
+sys	erp/settings.py	/^import os, sys$/;"	kind:namespace	line:13
+sys	manage.py	/^import sys$/;"	kind:namespace	line:3
+tests.py	apps/util/tests.py	1;"	kind:file	line:1
+unicode_literals	apps/util/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	apps/util/migrations/0002_cidade.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+url	erp/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:16
+urlpatterns	erp/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urls.py	apps/util/urls.py	1;"	kind:file	line:1
+urls.py	erp/urls.py	1;"	kind:file	line:1
+views.py	apps/util/views.py	1;"	kind:file	line:1
+wsgi.py	erp/wsgi.py	1;"	kind:file	line:1
