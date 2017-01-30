@@ -14,15 +14,17 @@ import os, sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-APP_DIR  = os.path.join(BASE_DIR, "apps")
+APPS_DIR = os.path.join(BASE_DIR, 'apps')
 
-sys.path.insert(0, APP_DIR)
+# add APPS_DIR in path of Python
+sys.path.insert(0, APPS_DIR)
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'r27y=5s6ke3k_#r+k5fbcvm#hf&)$=+4d8n)k+e7+g^j*&5k&^'
+SECRET_KEY = '$fn5f+n$6)(kacj=*yho=u%d#$dat#r34&i7(^jxc!c9q5%wth'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,22 +33,20 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
 DJANGO_APPS = [
-'django.contrib.admin',
-'django.contrib.auth',
-'django.contrib.contenttypes',
-'django.contrib.sessions',
-'django.contrib.messages',
-'django.contrib.staticfiles',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 ]
 
-ERP_APPS =[
-    'util.apps.UtilConfig',
-    'estoque.apps.EstoqueConfig'
+ERP_APPS = [
+    'utils.apps.UtilsConfig',
 ]
 
-INSTALLED_APPS = ERP_APPS + DJANGO_APPS
+INSTALLED_APPS = DJANGO_APPS + ERP_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
