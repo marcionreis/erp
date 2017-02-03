@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+{% block conteudo %}
+    <ul>
+        {% for p in prods%}
+            <li>{{p}}</li>
+        {% endfor%}
+    </ul>
+    
+{% endblock %}

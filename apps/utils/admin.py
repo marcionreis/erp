@@ -2,6 +2,7 @@ from django.contrib import admin
 from . models import Regiao, Estado, Cidade
 
 # INLINES
+# https://docs.djangoproject.com/en/1.10/ref/contrib/admin/#inlinemodeladmin-options
 class EstadoInline(admin.TabularInline):
     model = Estado
     extra = 0
