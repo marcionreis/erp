@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+
+{% block conteudo %}
+	<h3> {{ produto }} </h3>
+    <ul>
+        
+        <li>Categoria: {{ produto.categoria }}</li>
+        <li>Marca: {{ produto.marca }}</li>
+        <li>Fabricante: {{ produto.marca.fabricante }}</li>
+    </ul>
+{% endblock %}

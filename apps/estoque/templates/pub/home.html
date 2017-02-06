@@ -2,9 +2,8 @@
 
 {% block conteudo %}
     <ul>
-        {% for p in prods%}
-            <li>{{p}}</li>
+        {% for p in prods %}
+            <li><a href="{{ p.get_absolute_url }}">{{p}}</a></li>
         {% endfor%}
     </ul>
-    
 {% endblock %}

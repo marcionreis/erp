@@ -29,7 +29,7 @@ SECRET_KEY = '$fn5f+n$6)(kacj=*yho=u%d#$dat#r34&i7(^jxc!c9q5%wth'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.33.10',]
 
 
 # Application definition
@@ -65,7 +65,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'statics/'),
+            os.path.join(BASE_DIR, 'statics/html/'),
+            os.path.join(BASE_DIR, 'statics/css/'),
+            os.path.join(BASE_DIR, 'statics/js/'),
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
