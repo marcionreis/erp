@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import loader
-from . models import Produto
+from . models import Produto, Categoria
 
 SUB_TITULO = "Estoque"
 
@@ -25,3 +25,16 @@ def produto(request, id):
     }
 
 	return HttpResponse(template.render(context, request))
+
+
+def categoria(request, id):
+    categoria = Categoria.objects.get(id=id)
+    produtos = Produto.objects.filter(categoria=categoria)
+    template = loader.get_template('pub/categoria.html')
+    context = {
+        'categoria': categoria,
+        'produtos': produtos,
+        'sub_titulo': SUB_TITULO,
+    }
+    
+    return HttpResponse(template.render(context, request))

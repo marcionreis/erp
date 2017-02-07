@@ -1,9 +1,30 @@
 {% extends 'base.html'%}
 
 {% block conteudo %}
-    <ul>
-        {% for p in prods %}
-            <li><a href="{{ p.get_absolute_url }}">{{p}}</a></li>
-        {% endfor%}
-    </ul>
+
+
+
+
+
+      <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="id">Nome</th>
+              <th data-field="name">Categoria</th>
+              <th data-field="price">Marca</th>
+              <th data-field="price">Fabricante</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            {% for p in prods %}
+                <tr>
+                    <td>{{ p }}</td>
+                    <td><a href="{{ p.categoria.get_absolute_url }}">{{ p.categoria }}</a></td>
+                    <td> {{ p.marca }}</td>
+                    <td> {{ p.fabricante }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+      </table>
 {% endblock %}

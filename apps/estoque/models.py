@@ -1,6 +1,5 @@
 from django.db import models
 from django.urls import reverse
-#from django.core.urlresolvers import reverse
 from utils.models import Cidade
 
 
@@ -44,6 +43,9 @@ class Categoria(models.Model):
     
     def __str__(self):
         return "{n}".format(n=self.nome)
+    
+    def get_absolute_url(self):
+        return reverse('estoque:categoria', kwargs={'id':self.id})
 
 
 class Produto(models.Model):
@@ -58,10 +60,13 @@ class Produto(models.Model):
     
     def __str__(self):
         return "{n}".format(n=self.nome)
+    
+    def fabricante(self):
+        return self.marca.fabricante
 
     def get_absolute_url(self):
         return reverse('estoque:produto', kwargs={'id':self.id})
-        #"/estoque/produto/{cod}".format(cod=self.codigo)
+        #return "/estoque/produto/{cod}".format(cod=self.codigo)
 
     
 class Lote(models.Model):

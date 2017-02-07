@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+
+{% block conteudo %}
+	<h3> {{ categoria }} </h3>
+    
+    <ul>
+        {% for p in produtos %}
+            <li><a href="{{ p.get_absolute_url }}">{{ p }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -29,7 +29,7 @@ SECRET_KEY = '$fn5f+n$6)(kacj=*yho=u%d#$dat#r34&i7(^jxc!c9q5%wth'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.33.10',]
+ALLOWED_HOSTS = []
 
 
 # Application definition
